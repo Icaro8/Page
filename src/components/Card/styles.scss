@@ -1,0 +1,92 @@
+.container_content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid var(--purple-900);
+  flex-grow: 1;
+  border-radius: 5px;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "IBM Plex Sans Thai Looped";
+    border-bottom: 1px solid var(--purple-600);
+    padding: 5px;
+    h3 {
+      color: var(--gray-100);
+    }
+    h3::first-letter {
+      text-transform: uppercase;
+    }
+    svg {
+      color: var(--gray-100);
+    }
+  }
+  .description {
+    padding: 10px;
+    font-size: 20px;
+    flex-grow: 1;
+    p {
+      color: var(--gray-400);
+    }
+  }
+  .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    div {
+      a {
+        color: var(--purple-600);
+        transition: filter 0.3s;
+        transition: color 0.3s;
+        &:hover {
+          color: var(--purple-300);
+        }
+      }
+    }
+    .subdescription {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 5px;
+
+      span {
+        color: var(--gray-300);
+        font-size: 18px;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .language {
+        display: flex;
+        gap: 15px;
+        .ts {
+          color: var(--blue-600);
+        }
+        .css {
+          color: var(--blue-400);
+        }
+        .scss {
+          color: var(--pink-450);
+        }
+        .js {
+          color: var(--yellow-500);
+        }
+        .html {
+          color: var(--html-color);
+        }
+      }
+    }
+    .ancor {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid var(--purple-300);
+      padding: 5px;
+    }
+  }
+}

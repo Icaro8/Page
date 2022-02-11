@@ -1,0 +1,17 @@
+.containerPage {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray-800);
+  .cardsSection {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+    .containercards {
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px;
+    }
+  }
+}
