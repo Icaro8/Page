@@ -32,6 +32,7 @@ export function Home() {
       await handleUser();
       await handleRepositoryes();
     }
+    window.alert("Pagina em construção!☂️");
     getUser();
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
