@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 20px;
+  div {
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 45px;
+    }
+  }
+  .containerProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,3 +1,6 @@
+//! font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+//! font-family: 'Roboto', sans-serif;
+
 * {
   padding: 0;
   margin: 0;
@@ -9,4 +12,24 @@ html,
 #root {
   width: 100%;
   height: 100%;
+}
+
+body,
+input,
+a,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+input,
+button {
+  border: none;
 }

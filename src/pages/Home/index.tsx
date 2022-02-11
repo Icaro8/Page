@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { AxiosResponse } from "axios";
-import { api } from "../../services";
 
+import { api } from "../../services";
+import { Profile } from "../../components/Profile";
 interface DataProps {
   login: string;
   id: number;
@@ -11,6 +11,7 @@ interface DataProps {
   public_repos: number;
   followers: number;
   following: number;
+  avatar_url: string;
 }
 
 export function Home() {
@@ -36,8 +37,14 @@ export function Home() {
   }
 
   return (
-    <>
-      <h1>{user?.name}</h1>
-    </>
+    <div>
+      <Profile
+        followers={user?.followers}
+        following={user?.following}
+        img={user?.avatar_url}
+        name={user?.name}
+        public_repos={user?.public_repos}
+      />
+    </div>
   );
 }
